@@ -28,7 +28,7 @@ As primeiras telas consideradas para o projeto são:
 - Cadastro e login
 - Publicação de arte
 
-O escopo poderá mudar de acordo com as orientações da disciplina.
+O escopo poderá mudar de acordo com as orientações da disciplina. As decisões atuais estão registradas em [`docs/ESCOPO.md`](docs/ESCOPO.md).
 
 ## Tecnologias
 
@@ -40,15 +40,35 @@ O escopo poderá mudar de acordo com as orientações da disciplina.
 
 Aplicar fundamentos de desenvolvimento web em um projeto com contexto de produto, trabalhando estrutura semântica, organização visual, responsividade e interações no navegador.
 
+## Equipe
+
+- [Maria Luiza Mol · @luizamoll](https://github.com/luizamoll)
+- [@Kaiser7009](https://github.com/Kaiser7009)
+
+O fluxo de colaboração está documentado em [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
 ## Estrutura do projeto
 
 ```text
 MarketArt/
-├── index.html
+├── .github/
+│   └── PULL_REQUEST_TEMPLATE.md
 ├── css/
 │   └── style.css
+├── docs/
+│   ├── ESCOPO.md
+│   └── ROADMAP.md
+├── .gitignore
+├── CONTRIBUTING.md
+├── index.html
 └── README.md
 ```
+
+## Desenvolvimento
+
+A branch `main` deve representar a versão estável. Novas funcionalidades e correções devem ser desenvolvidas em branches próprias e integradas por Pull Request.
+
+A evolução prevista pode ser acompanhada em [`docs/ROADMAP.md`](docs/ROADMAP.md).
 
 ## Status
 
