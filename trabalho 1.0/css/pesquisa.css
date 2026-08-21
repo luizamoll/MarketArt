@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffefc4;
+  color: rgb(150, 100, 25);
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="search"] {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #ffdc7c;
+  color: #dbbb63;
+}
+
+input::placeholder {
+  color: #b3b3b3;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffdc7c;
+  color: #dbbb63;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.categoria {
+  position: relative;      /* necessário pra posicionar a imagem */
+  overflow: hidden;        /* esconde a imagem que "vaza" */
+  display: block;
+  height: 120px;
+  padding: 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;   /* tira o sublinhado do link */
+  transition: transform 0.2s ease;
+}
+
+/* efeito ao passar o mouse */
+.categoria:hover {
+  transform: scale(1.2);
+}
+
+.categoria img {
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+  width: 80px;
+  transform: rotate(25deg);
+  opacity: 0;                        /* invisível no início */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.categoria:hover img {
+  opacity: 1;                        /* aparece no hover */
+  transform: rotate(25deg) scale(1.15);
+}
+
+.desenho     { background-color: #ffdc7c; }
+.escultura   { background-color: #ffdc7c; }
+.pintura     { background-color: #ffdc7c; }
+.digital     { background-color: #ffdc7c; }
+.artesanato  { background-color: #ffdc7c; }
+.fotografias { background-color: #ffdc7c; }
