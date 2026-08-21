@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your art</title>
+</head>
+
+<body>
+    <header> 
+        <nav height="150px" align="center">
+                <a href="#pagina inicial">Home</a> <a href="#sobre">Sobre</a> <a href="#contato">Contato</a><br/>
+        </nav>
+
+        <img src="img/banner_art.jpg" alt="Banner de artes" align="center" width="100%" height="auto">
+        <h1 id="pagina inicial">venda e compre artes</h1>
+    </header>
+
+
+    <main> 
+        <section>
+            <h2> seja bem vindo! aproveite as nossas ofertas</h2> 
+         <p style="font-size: large;" id="sobre">um espaço dedicado a conectar artistas talentosos e
+            colecionadores apaixonados. Aqui você encontra obras
+            autênticas e exclusivas, desde ilustrações e pinturas
+            até esculturas e artes digitais, com descrições detalhadas,
+            histórico do artista e garantia de autenticidade. Facilitamos
+            a compra e venda com um processo seguro, pagamentos protegidos 
+            e suporte ao cliente, além de ferramentas para artistas exporem 
+            seu portfólio e gerir pedidos. Navegue, descubra peças que inspiram
+            e apoie criadores independentes enquanto transforma cada arte em uma
+            história compartilhada.</p>
+         </section>
+
+         <ul>
+            <li>ilustrações</li>
+            <li>pinturas</li>
+            <li>esculturas</li>
+            <li>artes digitais</li>
+    </main>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <form align="center" action="processar_formulario.php" method="post">
+        <h2 id="contato">cadastre-se</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br/>
+        <button type="submit" >enviar</button>
+    </form>
+    <br/><br/>
+    <footer>© 2023 sua loja de artes. Todos os direitos reservados.</footer>
+</body>
+</html>
