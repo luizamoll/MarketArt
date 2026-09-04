@@ -3,54 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarketArt</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Finalização da compra | MarketArt</title>
 </head>
 
 <body>
-    <header> 
-        <nav height="150px" align="center">
-                <a href="#pagina inicial">Home</a> <a href="#sobre">Sobre</a> <a href="#contato">Contato</a><br/>
-        </nav>
-
-        <img src="img/banner_art.jpg" alt="Banner de artes" align="center" width="100%" height="auto">
-        <h1 id="pagina inicial">venda e compre artes</h1>
+    <header>
+        <h1>Finalização da compra</h1>
+        <p>Revise os dados do pedido antes de confirmar.</p>
     </header>
 
-
-    <main> 
+    <main>
         <section>
-            <h2> seja bem vindo! aproveite as nossas ofertas</h2> 
-         <p style="font-size: large;" id="sobre">um espaço dedicado a conectar artistas talentosos e
-            colecionadores apaixonados. Aqui você encontra obras
-            autênticas e exclusivas, desde ilustrações e pinturas
-            até esculturas e artes digitais, com descrições detalhadas,
-            histórico do artista e garantia de autenticidade. Facilitamos
-            a compra e venda com um processo seguro, pagamentos protegidos 
-            e suporte ao cliente, além de ferramentas para artistas exporem 
-            seu portfólio e gerir pedidos. Navegue, descubra peças que inspiram
-            e apoie criadores independentes enquanto transforma cada arte em uma
-            história compartilhada.</p>
-         </section>
+            <h2>Resumo do pedido</h2>
 
-         <ul>
-            <li>ilustrações</li>
-            <li>pinturas</li>
-            <li>esculturas</li>
-            <li>artes digitais</li>
+            <article>
+                <h3>Obra selecionada</h3>
+                <p>Nome da obra: Exemplo de obra</p>
+                <p>Artista: Nome do artista</p>
+                <p>Quantidade: 1</p>
+                <p>Valor: R$ 0,00</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Dados do comprador</h2>
+
+            <form>
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </form>
+        </section>
+
+        <section>
+            <h2>Forma de pagamento</h2>
+
+            <form>
+                <input type="radio" id="pix" name="pagamento" value="pix">
+                <label for="pix">Pix</label>
+
+                <input type="radio" id="cartao" name="pagamento" value="cartao">
+                <label for="cartao">Cartão</label>
+
+                <input type="radio" id="boleto" name="pagamento" value="boleto">
+                <label for="boleto">Boleto</label>
+            </form>
+        </section>
+
+        <section>
+            <h2>Confirmação</h2>
+            <p>Total da compra: R$ 0,00</p>
+            <button type="button">Confirmar compra</button>
+        </section>
     </main>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <form align="center" action="processar_formulario.php" method="post">
-        <h2 id="contato">cadastre-se</h2>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        <br/>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br/>
-        <button type="submit" >enviar</button>
-    </form>
-    <br/><br/>
-    <footer>© 2023 sua loja de artes. Todos os direitos reservados.</footer>
+
+    <footer>
+        <p>MarketArt</p>
+    </footer>
 </body>
 </html>
