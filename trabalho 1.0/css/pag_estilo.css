@@ -1,0 +1,45 @@
+/* ---- páginas de categoria ---- */
+.topo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.voltar {
+  color: #fff;
+  text-decoration: none;
+  background-color: #282828;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.voltar:hover { background-color: #3e3e3e; }
+
+/* mural estilo Pinterest */
+.mural {
+  column-count: 4;
+  column-gap: 16px;
+}
+
+.pin {
+  display: block;
+  margin-bottom: 16px;
+  break-inside: avoid;      /* impede a imagem de ser cortada entre colunas */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.pin img {
+  width: 100%;
+  height: auto;             /* mantém a altura original = efeito cascata */
+  display: block;
+}
+
+.pin:hover { transform: scale(1.03); }
+
+/* responsivo */
+@media (max-width: 900px) { .mural { column-count: 3; } }
+@media (max-width: 600px) { .mural { column-count: 2; } }

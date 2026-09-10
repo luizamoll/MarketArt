@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffefc4;
+  background-color: #bd9561;
   color: rgb(150, 100, 25);
   padding: 30px;
 }
@@ -28,7 +28,7 @@ input[type="search"] {
 }
 
 input::placeholder {
-  color: #b3b3b3;
+  color: #bd9561;
 }
 
 button {
@@ -63,7 +63,7 @@ h2 {
   height: 120px;
   padding: 16px;
   border-radius: 8px;
-  color: #fff;
+  color: #dbbb63;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;   /* tira o sublinhado do link */
@@ -72,24 +72,46 @@ h2 {
 
 /* efeito ao passar o mouse */
 .categoria:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .categoria img {
   position: absolute;
-  right: -12px;
-  bottom: -12px;
+  right: 25px;
   width: 80px;
-  transform: rotate(25deg);
   opacity: 0;                        /* invisível no início */
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 2.5s ease, transform 0.25s ease;
+  right: 5px;
+  bottom: 5px;
 }
 
 .categoria:hover img {
   opacity: 1;                        /* aparece no hover */
-  transform: rotate(25deg) scale(1.15);
 }
 
+.pintura img {
+  width: 100px;
+}
+
+.artesanato img {
+  width: 80px;
+}
+
+.desenho img {
+  width: 90px;
+}
+
+.digital img {
+  width: 90px;
+}
+
+.escultura img {
+  width: 90px;
+}
+
+.fotografias img {
+  width: 90px;
+}
 .desenho     { background-color: #ffdc7c; }
 .escultura   { background-color: #ffdc7c; }
 .pintura     { background-color: #ffdc7c; }
