@@ -7,49 +7,93 @@
 </head>
 <body>
     <header>
-        <h1>Configurações</h1>
-        <p>Atualize informações e preferências da sua conta.</p>
+        <h1>MarketArt</h1>
+        <nav>
+            <a href="checkout.html">Home</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="pesquisa.html">Pesquisa</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="notificacoes.html">Notificações</a>
+            <a href="configuracoes.html">Configurações</a>
+        </nav>
     </header>
 
     <main>
         <section>
-            <h2>Dados da conta</h2>
+            <h2>Configurações da conta</h2>
+            <p>Atualize seus dados e preferências no MarketArt.</p>
+        </section>
+
+        <section>
+            <h2>Dados pessoais</h2>
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </p>
 
-                <br>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </p>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email">
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </p>
 
-                <br>
+                <button type="submit">Salvar dados</button>
+            </form>
+        </section>
 
-                <label for="senha">Nova senha:</label>
-                <input type="password" id="senha" name="senha">
+        <section>
+            <h2>Segurança da conta</h2>
+            <form>
+                <p>
+                    <label for="senha-atual">Senha atual:</label>
+                    <input type="password" id="senha-atual" name="senha-atual">
+                </p>
 
-                <br>
+                <p>
+                    <label for="nova-senha">Nova senha:</label>
+                    <input type="password" id="nova-senha" name="nova-senha">
+                </p>
 
-                <button type="submit">Salvar alterações</button>
+                <p>
+                    <label for="confirmar-senha">Confirmar nova senha:</label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha">
+                </p>
+
+                <button type="submit">Alterar senha</button>
             </form>
         </section>
 
         <section>
             <h2>Preferências</h2>
             <form>
-                <input type="checkbox" id="novidades" name="novidades">
-                <label for="novidades">Receber novidades e lançamentos</label>
+                <p>
+                    <input type="checkbox" id="novidades" name="novidades">
+                    <label for="novidades">Receber novidades e lançamentos</label>
+                </p>
 
-                <br>
+                <p>
+                    <input type="checkbox" id="pedidos" name="pedidos">
+                    <label for="pedidos">Receber atualizações sobre pedidos</label>
+                </p>
 
-                <input type="checkbox" id="pedidos" name="pedidos">
-                <label for="pedidos">Receber atualizações sobre pedidos</label>
+                <p>
+                    <input type="checkbox" id="promocoes" name="promocoes">
+                    <label for="promocoes">Receber promoções</label>
+                </p>
+
+                <button type="submit">Salvar preferências</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>MarketArt</p>
+        <p>&copy; 2026 MarketArt.</p>
     </footer>
 </body>
 </html>
