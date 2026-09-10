@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Art - Galeria & Loja de Artes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Your Art</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cadastro">Cadastre-se</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero-banner">
+            <img src="img/banner_art.jpg" alt="Banner ilustrativo de obras de arte em exibição">
+            <h2>Venda e compre artes exclusivas</h2>
+        </section>
+    </header>
+
+    <div class="container-principal">
+        
+        <main>
+            <section id="sobre">
+                <h2>Seja bem-vindo! Aproveite nossas ofertas</h2>
+                <p>
+                    Um espaço dedicado a conectar artistas talentosos e colecionadores apaixonados. 
+                    Aqui você encontra obras autênticas e exclusivas, com descrições detalhadas, 
+                    histórico do artista e garantia de autenticidade. Facilitamos a compra e venda com 
+                    um processo seguro, pagamentos protegidos e suporte dedicado.
+                </p>
+            </section>
+
+            <section id="catalogo">
+                <h2>Categorias em Destaque</h2>
+                <div class="grid-categorias">
+                    <article>
+                        <h3>Ilustrações</h3>
+                        <p>Obras originais e tiragens limitadas feitas à mão.</p>
+                    </article>
+                    <article>
+                        <h3>Pinturas</h3>
+                        <p>Telas em óleo, acrílica e aquarela de diversos estilos.</p>
+                    </article>
+                    <article>
+                        <h3>Esculturas</h3>
+                        <p>Peças tridimensionais em madeira, argila e metal.</p>
+                    </article>
+                    <article>
+                        <h3>Artes Digitais</h3>
+                        <p>Ilustrações digitais, artes 3D e itens colecionáveis.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="cadastro">
+                <h2>Cadastre-se na Plataforma</h2>
+                <form action="processar_formulario.php" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="perfil">Eu sou:</label>
+                        <select id="perfil" name="perfil">
+                            <option value="colecionador">Colecionador / Comprador</option>
+                            <option value="artista">Artista / Criador</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Criar Conta</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <section class="widget">
+                <h3>Artistas em Destaque</h3>
+                <ul>
+                    <li><a href="#artista1">Maria Silva (Pintura)</a></li>
+                    <li><a href="#artista2">João Souza (Digital)</a></li>
+                    <li><a href="#artista3">Ana Lima (Escultura)</a></li>
+                </ul>
+            </section>
+
+            <section class="widget">
+                <h3>Filtros Rápidos</h3>
+                <ul>
+                    <li><a href="#ofertas">Em Promoção</a></li>
+                    <li><a href="#novidades">Lançamentos da Semana</a></li>
+                    <li><a href="#mais-vendidos">Mais Populares</a></li>
+                </ul>
+            </section>
+        </aside>
+
+    </div>
+
+    <footer id="contato">
+        <div class="footer-info">
+            <p>&copy; 2026 Your Art - Sua Loja de Artes. Todos os direitos reservados.</p>
+            <p>Contato: suporte@yourart.com | Tel: (11) 99999-9999</p>
+        </div>
+    </footer>
+
+</body>
+</html>
