@@ -7,101 +7,108 @@
     <link rel="stylesheet" href="../css/luiza.css">
 </head>
 <body>
-    <header>
-        <h1>MarketArt</h1>
-        <nav>
-            <a href="checkout.html">Home</a>
-            <a href="categorias.html">Categorias</a>
-            <a href="pesquisa.html">Pesquisa</a>
-            <a href="cadastro.html">Cadastro</a>
-            <a href="carrinho.html">Carrinho</a>
-            <a href="notificacoes.html">Notificações</a>
-            <a href="configuracoes.html">Configurações</a>
-        </nav>
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="brand" href="checkout.html"><span>MA</span>MarketArt</a>
+            <nav aria-label="Navegação principal">
+                <a href="checkout.html">Home</a>
+                <a href="categorias.html">Categorias</a>
+                <a href="pesquisa.html">Pesquisa</a>
+                <a class="active" href="cadastro.html">Cadastro</a>
+                <a href="carrinho.html">Carrinho</a>
+                <a href="notificacoes.html">Notificações</a>
+                <a href="configuracoes.html">Configurações</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Crie sua conta</h2>
-            <p>Cadastre-se para comprar obras ou publicar trabalhos artísticos no MarketArt.</p>
-
-            <form>
-                <p>
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </p>
-
-                <p>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
-
-                <p>
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" required>
-                </p>
-
-                <p>
-                    <label for="perfil">Perfil:</label>
-                    <select id="perfil" name="perfil" required>
-                        <option value="">Selecione</option>
-                        <option value="comprador">Comprador</option>
-                        <option value="artista">Artista / vendedor</option>
-                    </select>
-                </p>
-
-                <p>
-                    <input type="checkbox" id="termos" name="termos" required>
-                    <label for="termos">Aceito os termos de uso da plataforma.</label>
-                </p>
-
-                <button type="submit">Criar conta</button>
-            </form>
+        <section class="page-intro">
+            <p class="eyebrow">Faça parte da comunidade</p>
+            <h1>Compre, descubra e venda arte.</h1>
+            <p>Crie sua conta no MarketArt ou publique uma obra para apresentar seu trabalho a novos colecionadores.</p>
         </section>
 
-        <section>
-            <h2>Venda sua arte</h2>
-            <p>Artistas cadastrados podem informar os dados da obra que desejam expor e vender.</p>
+        <div class="account-grid">
+            <section class="card">
+                <h2>Crie sua conta</h2>
+                <p class="section-copy">Preencha seus dados para começar a usar a plataforma.</p>
 
-            <form>
-                <p>
-                    <label for="obra">Nome da obra:</label>
-                    <input type="text" id="obra" name="obra" required>
-                </p>
+                <form class="form-grid">
+                    <div class="field full">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="field full">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+                    </div>
+                    <div class="field">
+                        <label for="perfil">Perfil</label>
+                        <select id="perfil" name="perfil" required>
+                            <option value="">Selecione</option>
+                            <option value="comprador">Comprador</option>
+                            <option value="artista">Artista / vendedor</option>
+                        </select>
+                    </div>
+                    <div class="check-row full">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Li e aceito os termos de uso da plataforma.</label>
+                    </div>
+                    <div class="btn-row full">
+                        <button type="submit">Criar conta</button>
+                    </div>
+                </form>
+            </section>
 
-                <p>
-                    <label for="categoria">Categoria:</label>
-                    <select id="categoria" name="categoria" required>
-                        <option value="">Selecione</option>
-                        <option value="ilustracao">Ilustração</option>
-                        <option value="pintura">Pintura</option>
-                        <option value="escultura">Escultura</option>
-                        <option value="arte-digital">Arte digital</option>
-                    </select>
-                </p>
+            <section class="card">
+                <h2>Venda sua arte</h2>
+                <p class="section-copy">Cadastre as informações principais da obra que deseja publicar.</p>
 
-                <p>
-                    <label for="descricao">Descrição:</label>
-                    <textarea id="descricao" name="descricao" rows="5" required></textarea>
-                </p>
-
-                <p>
-                    <label for="preco">Preço:</label>
-                    <input type="number" id="preco" name="preco" min="0" step="0.01" required>
-                </p>
-
-                <p>
-                    <label for="imagem">Imagem da obra:</label>
-                    <input type="file" id="imagem" name="imagem" accept="image/*">
-                </p>
-
-                <button type="submit">Cadastrar obra</button>
-            </form>
-        </section>
+                <form class="form-grid">
+                    <div class="field full">
+                        <label for="obra">Nome da obra</label>
+                        <input type="text" id="obra" name="obra" placeholder="Ex.: Horizonte em cores" required>
+                    </div>
+                    <div class="field">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Selecione</option>
+                            <option value="ilustracao">Ilustração</option>
+                            <option value="pintura">Pintura</option>
+                            <option value="escultura">Escultura</option>
+                            <option value="arte-digital">Arte digital</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="preco">Preço</label>
+                        <input type="number" id="preco" name="preco" min="0" step="0.01" placeholder="0,00" required>
+                    </div>
+                    <div class="field full">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" placeholder="Conte um pouco sobre a obra, técnica e inspiração." required></textarea>
+                    </div>
+                    <div class="field full">
+                        <label for="imagem">Imagem da obra</label>
+                        <input type="file" id="imagem" name="imagem" accept="image/*">
+                    </div>
+                    <div class="btn-row full">
+                        <button type="submit">Cadastrar obra</button>
+                    </div>
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 MarketArt.</p>
+        <div class="footer-shell">
+            <strong>MarketArt</strong>
+            <span>&copy; 2026 MarketArt.</span>
+        </div>
     </footer>
 </body>
 </html>
