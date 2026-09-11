@@ -7,56 +7,75 @@
     <link rel="stylesheet" href="../css/luiza.css">
 </head>
 <body>
-    <header>
-        <h1>MarketArt</h1>
-        <nav>
-            <a href="checkout.html">Home</a>
-            <a href="categorias.html">Categorias</a>
-            <a href="pesquisa.html">Pesquisa</a>
-            <a href="cadastro.html">Cadastro</a>
-            <a href="carrinho.html">Carrinho</a>
-            <a href="notificacoes.html">Notificações</a>
-            <a href="configuracoes.html">Configurações</a>
-        </nav>
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="brand" href="checkout.html"><span>MA</span>MarketArt</a>
+            <nav aria-label="Navegação principal">
+                <a href="checkout.html">Home</a>
+                <a href="categorias.html">Categorias</a>
+                <a href="pesquisa.html">Pesquisa</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a class="active" href="carrinho.html">Carrinho</a>
+                <a href="notificacoes.html">Notificações</a>
+                <a href="configuracoes.html">Configurações</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Seu carrinho</h2>
-            <p>Confira as obras selecionadas antes de seguir para a finalização da compra.</p>
+        <section class="page-intro">
+            <p class="eyebrow">Sua seleção</p>
+            <h1>Seu carrinho</h1>
+            <p>Revise as obras escolhidas e siga para a finalização quando estiver tudo certo.</p>
         </section>
 
-        <section>
-            <h2>Itens adicionados</h2>
+        <div class="cart-layout">
+            <section class="card">
+                <h2>Itens adicionados</h2>
+                <p class="section-copy">1 obra no seu carrinho.</p>
 
-            <article>
-                <h3>Exemplo de obra</h3>
-                <p><strong>Artista:</strong> Nome do artista</p>
-                <p><strong>Categoria:</strong> Pintura</p>
-                <p><strong>Quantidade:</strong> 1</p>
-                <p><strong>Preço:</strong> R$ 0,00</p>
-                <button type="button">Remover item</button>
-            </article>
-        </section>
+                <article class="cart-item">
+                    <img src="../img/banner_art.jpg" alt="Imagem ilustrativa da obra no carrinho">
+                    <div>
+                        <h3>Exemplo de obra</h3>
+                        <p class="muted">Nome do artista · Pintura</p>
+                        <p class="muted">Quantidade: 1</p>
+                        <p class="price">R$ 0,00</p>
+                        <div class="btn-row">
+                            <button class="btn danger" type="button">Remover item</button>
+                        </div>
+                    </div>
+                </article>
 
-        <section>
-            <h2>Resumo da compra</h2>
-            <p><strong>Subtotal:</strong> R$ 0,00</p>
-            <p><strong>Frete:</strong> R$ 0,00</p>
-            <p><strong>Total:</strong> R$ 0,00</p>
+                <div class="btn-row">
+                    <a class="btn secondary" href="pesquisa.html">Continuar comprando</a>
+                </div>
+            </section>
 
-            <p>
-                <a href="pesquisa.html">Continuar comprando</a>
-            </p>
+            <aside class="card order-summary">
+                <h2>Resumo da compra</h2>
+                <p class="section-copy">Valores do pedido antes da confirmação.</p>
 
-            <p>
-                <a href="../index.html">Ir para finalização da compra</a>
-            </p>
-        </section>
+                <div class="summary-lines">
+                    <div class="summary-line"><span>Subtotal</span><strong>R$ 0,00</strong></div>
+                    <div class="summary-line"><span>Frete</span><strong>R$ 0,00</strong></div>
+                    <div class="summary-line total"><span>Total</span><span>R$ 0,00</span></div>
+                </div>
+
+                <div class="btn-row">
+                    <a class="btn" href="../index.html">Finalizar compra</a>
+                </div>
+
+                <span class="info-badge">✓ Confira tudo antes de avançar</span>
+            </aside>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 MarketArt.</p>
+        <div class="footer-shell">
+            <strong>MarketArt</strong>
+            <span>&copy; 2026 MarketArt.</span>
+        </div>
     </footer>
 </body>
 </html>
