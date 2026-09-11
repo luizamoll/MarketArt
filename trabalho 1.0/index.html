@@ -7,116 +7,135 @@
     <link rel="stylesheet" href="css/luiza.css">
 </head>
 <body>
-    <header>
-        <h1>MarketArt</h1>
-        <nav>
-            <a href="pages/checkout.html">Home</a>
-            <a href="pages/categorias.html">Categorias</a>
-            <a href="pages/pesquisa.html">Pesquisa</a>
-            <a href="pages/cadastro.html">Cadastro</a>
-            <a href="pages/carrinho.html">Carrinho</a>
-            <a href="pages/notificacoes.html">Notificações</a>
-            <a href="pages/configuracoes.html">Configurações</a>
-        </nav>
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="brand" href="pages/checkout.html"><span>MA</span>MarketArt</a>
+            <nav aria-label="Navegação principal">
+                <a href="pages/checkout.html">Home</a>
+                <a href="pages/categorias.html">Categorias</a>
+                <a href="pages/pesquisa.html">Pesquisa</a>
+                <a href="pages/cadastro.html">Cadastro</a>
+                <a href="pages/carrinho.html">Carrinho</a>
+                <a href="pages/notificacoes.html">Notificações</a>
+                <a href="pages/configuracoes.html">Configurações</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Finalização da compra</h2>
-            <p>Confira os dados do pedido antes de confirmar a compra.</p>
+        <section class="page-intro">
+            <p class="eyebrow">Última etapa</p>
+            <h1>Finalização da compra</h1>
+            <p>Revise seus dados, escolha a forma de pagamento e confirme seu pedido com tranquilidade.</p>
         </section>
 
-        <section>
-            <h2>Resumo do pedido</h2>
-            <article>
-                <h3>Obra selecionada</h3>
-                <p><strong>Obra:</strong> Exemplo de obra</p>
-                <p><strong>Artista:</strong> Nome do artista</p>
-                <p><strong>Quantidade:</strong> 1</p>
-                <p><strong>Valor:</strong> R$ 0,00</p>
-            </article>
-            <p><strong>Total:</strong> R$ 0,00</p>
-        </section>
+        <div class="checkout-layout">
+            <div class="checkout-main">
+                <section class="card">
+                    <h2>Dados do comprador</h2>
+                    <p class="section-copy">Informe os dados que serão vinculados ao pedido.</p>
+                    <form class="form-grid">
+                        <div class="field full">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                        </div>
+                    </form>
+                </section>
 
-        <section>
-            <h2>Dados do comprador</h2>
-            <form>
-                <p>
-                    <label for="nome">Nome completo:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </p>
-                <p>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
-                <p>
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone">
-                </p>
-            </form>
-        </section>
+                <section class="card">
+                    <h2>Endereço de entrega</h2>
+                    <p class="section-copy">Preencha o endereço para calcular e organizar a entrega da obra.</p>
+                    <form class="form-grid">
+                        <div class="field">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+                        </div>
+                        <div class="field">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" name="numero" placeholder="123" required>
+                        </div>
+                        <div class="field full">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Rua, avenida ou alameda" required>
+                        </div>
+                        <div class="field full">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" name="complemento" placeholder="Apartamento, bloco, referência...">
+                        </div>
+                        <div class="field">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" required>
+                        </div>
+                        <div class="field">
+                            <label for="estado">Estado</label>
+                            <input type="text" id="estado" name="estado" placeholder="MG" required>
+                        </div>
+                    </form>
+                </section>
 
-        <section>
-            <h2>Endereço de entrega</h2>
-            <form>
-                <p>
-                    <label for="cep">CEP:</label>
-                    <input type="text" id="cep" name="cep" required>
-                </p>
-                <p>
-                    <label for="endereco">Endereço:</label>
-                    <input type="text" id="endereco" name="endereco" required>
-                </p>
-                <p>
-                    <label for="numero">Número:</label>
-                    <input type="text" id="numero" name="numero" required>
-                </p>
-                <p>
-                    <label for="complemento">Complemento:</label>
-                    <input type="text" id="complemento" name="complemento">
-                </p>
-                <p>
-                    <label for="cidade">Cidade:</label>
-                    <input type="text" id="cidade" name="cidade" required>
-                </p>
-                <p>
-                    <label for="estado">Estado:</label>
-                    <input type="text" id="estado" name="estado" required>
-                </p>
-            </form>
-        </section>
+                <section class="card">
+                    <h2>Forma de pagamento</h2>
+                    <p class="section-copy">Escolha a opção que prefere para concluir a compra.</p>
+                    <form class="payment-options">
+                        <div class="radio-option">
+                            <input type="radio" id="pix" name="pagamento" value="pix" required>
+                            <label for="pix"><strong>Pix</strong><br><span class="muted">Pagamento rápido</span></label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="cartao" name="pagamento" value="cartao">
+                            <label for="cartao"><strong>Cartão</strong><br><span class="muted">Crédito ou débito</span></label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="boleto" name="pagamento" value="boleto">
+                            <label for="boleto"><strong>Boleto</strong><br><span class="muted">Pagamento bancário</span></label>
+                        </div>
+                    </form>
+                </section>
+            </div>
 
-        <section>
-            <h2>Forma de pagamento</h2>
-            <form>
-                <fieldset>
-                    <legend>Escolha uma opção</legend>
-                    <p>
-                        <input type="radio" id="pix" name="pagamento" value="pix" required>
-                        <label for="pix">Pix</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="cartao" name="pagamento" value="cartao">
-                        <label for="cartao">Cartão</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="boleto" name="pagamento" value="boleto">
-                        <label for="boleto">Boleto</label>
-                    </p>
-                </fieldset>
-            </form>
-        </section>
+            <aside class="card order-summary">
+                <h2>Resumo do pedido</h2>
+                <p class="section-copy">Confira a obra selecionada.</p>
 
-        <section>
-            <h2>Confirmação</h2>
-            <p>Ao confirmar, você declara que revisou os dados da compra.</p>
-            <button type="button">Confirmar compra</button>
-            <a href="pages/carrinho.html">Voltar ao carrinho</a>
-        </section>
+                <article class="order-item">
+                    <img src="img/banner_art.jpg" alt="Imagem ilustrativa da obra selecionada">
+                    <div>
+                        <h3>Obra selecionada</h3>
+                        <p class="muted">Nome do artista</p>
+                        <p class="muted">Quantidade: 1</p>
+                        <p class="price">R$ 0,00</p>
+                    </div>
+                </article>
+
+                <div class="summary-lines">
+                    <div class="summary-line"><span>Subtotal</span><strong>R$ 0,00</strong></div>
+                    <div class="summary-line"><span>Frete</span><strong>R$ 0,00</strong></div>
+                    <div class="summary-line total"><span>Total</span><span>R$ 0,00</span></div>
+                </div>
+
+                <div class="btn-row">
+                    <button type="button">Confirmar compra</button>
+                    <a class="btn secondary" href="pages/carrinho.html">Voltar ao carrinho</a>
+                </div>
+
+                <span class="info-badge">✓ Revise os dados antes de confirmar</span>
+            </aside>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 MarketArt. Todos os direitos reservados.</p>
+        <div class="footer-shell">
+            <strong>MarketArt</strong>
+            <span>&copy; 2026 MarketArt. Todos os direitos reservados.</span>
+        </div>
     </footer>
 </body>
 </html>
